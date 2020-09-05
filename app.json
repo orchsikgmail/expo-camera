@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "irs",
+    "slug": "irs",
+    "scheme": "irs",
+    "privacy": "unlisted",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "userInterfaceStyle": "dark",
+      "package": "com.jinhak.rams",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "RECORD_AUDIO", "READ_PHONE_STATE", "READ_CONTACTS", "ACCESS_FINE_LOCATION", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "ios": {
+      "userInterfaceStyle": "light",
+      "bundleIdentifier": "com.jinhak.rams",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "isTabletOnly": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires camera access to take a QR code of the admission ticket or photoes of non-ID card holder.",
+        "NSPhotoLibraryUsageDescription": "This app requires photo library access to check the QR codes or photoes you took properly. and make sure students are appropriate students.",
+        "NSPhotoLibraryAddUsageDescription": "This app requires photo library access to check the QR codes or photoes you took properly. and make sure students are appropriate students."
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}
